@@ -1,17 +1,24 @@
-## Getting Started
+# the_v_project_is_a_backend_api_designed_to_handle_data_processing_and_storage_for_a_react-based_frontend_application._the_api_will_provide_a_range_of_endpoints_for_creating,_reading,_updating,_and_deleting_data._the_project_will_utilize_fastapi_as_the_backend_framework_and_sqlalchemy_for_database_operations. Backend API
 
-### Prerequisites
+Complete FastAPI backend generated from report analysis.
 
-* Python 3.9+
-* FastAPI
-* SQLAlchemy
-* PostgreSQL
+## Setup
 
-### Installing
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-1. Clone the repository
-2. Install dependencies using `pip install -r requirements.txt`
-3. Create a new file named `.env` and add the following variables:
-    DATABASE_URL=sqlite:///app.db
-    SECRET_KEY=dev-secret-key-change-in-production
-4. Run the application using `uvicorn app.main:app --host 0.0.0.0 --port 8000`
+2. Set up environment:
+```bash
+cp .env.example .env
+```
+
+3. Run the application:
+```bash
+python main.py
+```
+
+## API Documentation
+
+Visit http://localhost:8000/docs for Swagger UI documentation.
