@@ -6,7 +6,7 @@ Backend API for v
 
 - **Frontend**: React
 - **Backend**: FastAPI + SQLAlchemy
-- **Frontend Source**: GitHub ([Repository](https://github.com/HimaShankarReddyEguturi/Designpythonworldclockui.git))
+- **Frontend Source**: GitHub ([Repository](https://github.com/HimaShankarReddyEguturi/Designecommerceproductui.git))
 
 ## Project Structure
 
@@ -43,20 +43,20 @@ cd backend
 
 ## Features
 
-- User registration and login
-- CRUD operations for data items
-- Data item search and filtering
-- Notifications for specific events
+- user authentication
+- data storage
+- data retrieval
 
 ## API Endpoints
 
-- `POST /api/users/register` - Create a new user account.
-- `POST /api/users/login` - Log in to the application.
-- `GET /api/data` - Retrieve a list of all user data.
-- `POST /api/data` - Create a new data item.
-- `GET /api/data/{data_id}` - Retrieve a specific data item.
-- `PUT /api/data/{data_id}` - Update a specific data item.
-- `DELETE /api/data/{data_id}` - Delete a specific data item.
+- `POST /api/register` - Register a new user
+- `POST /api/login` - Login an existing user
+- `GET /api/data` - Get all data for the authenticated user
+- `POST /api/data` - Create new data for the authenticated user
+- `GET /api/data/{data_id}` - Get a specific data item for the authenticated user
+- `PUT /api/data/{data_id}` - Update a specific data item for the authenticated user
+- `DELETE /api/data/{data_id}` - Delete a specific data item for the authenticated user
+- `POST /api/password_reset` - Reset the password for the authenticated user
 
 ## License
 
