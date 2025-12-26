@@ -1,7 +1,9 @@
 "use client";
+
 import * as React from "react";
 import { Command as CommandPrimitive } from "cmdk@1.1.1";
 import { SearchIcon } from "lucide-react@0.487.0";
+
 import { cn } from "./utils";
 import {
   Dialog,
@@ -10,6 +12,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "./dialog";
+
 function Command({
   className,
   ...props
@@ -25,6 +28,7 @@ function Command({
     />
   );
 }
+
 function CommandDialog({
   title = "Command Palette",
   description = "Search for a command to run...",
@@ -48,6 +52,7 @@ function CommandDialog({
     </Dialog>
   );
 }
+
 function CommandInput({
   className,
   ...props
@@ -61,7 +66,7 @@ function CommandInput({
       <CommandPrimitive.Input
         data-slot="command-input"
         className={cn(
-          "",
+          "placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-hidden disabled:cursor-not-allowed disabled:opacity-50",
           className,
         )}
         {...props}
@@ -69,6 +74,7 @@ function CommandInput({
     </div>
   );
 }
+
 function CommandList({
   className,
   ...props
@@ -84,6 +90,7 @@ function CommandList({
     />
   );
 }
+
 function CommandEmpty({
   ...props
 }: React.ComponentProps<typeof CommandPrimitive.Empty>) {
@@ -95,6 +102,7 @@ function CommandEmpty({
     />
   );
 }
+
 function CommandGroup({
   className,
   ...props
@@ -110,6 +118,7 @@ function CommandGroup({
     />
   );
 }
+
 function CommandSeparator({
   className,
   ...props
@@ -122,6 +131,7 @@ function CommandSeparator({
     />
   );
 }
+
 function CommandItem({
   className,
   ...props
@@ -137,6 +147,7 @@ function CommandItem({
     />
   );
 }
+
 function CommandShortcut({
   className,
   ...props
@@ -152,6 +163,7 @@ function CommandShortcut({
     />
   );
 }
+
 export {
   Command,
   CommandDialog,
