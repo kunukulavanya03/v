@@ -76,16 +76,20 @@ export const api_data = async (data) => {
   const response = await api.post('/api/data', data);
   return response.data;
 };
-export const api_data_{data_id} = async (params = {}) => {
-  const response = await api.get('/api/data/{data_id}', { params });
+export const api_data_{id} = async (params = {}) => {
+  const response = await api.get('/api/data/{id}', { params });
   return response.data;
 };
-export const api_data_{data_id} = async (id, data) => {
-  const response = await api.put(`/api/data/{data_id}/${id}`, data);
+export const api_data_{id} = async (id, data) => {
+  const response = await api.put(`/api/data/{id}/${id}`, data);
   return response.data;
 };
-export const api_data_{data_id} = async (id) => {
-  const response = await api.delete(`/api/data/{data_id}/${id}`);
+export const api_data_{id} = async (id) => {
+  const response = await api.delete(`/api/data/{id}/${id}`);
+  return response.data;
+};
+export const api_search = async (params = {}) => {
+  const response = await api.get('/api/search', { params });
   return response.data;
 };
 export const api_password_reset = async (data) => {
